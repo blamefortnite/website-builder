@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Enhanced AI-Powered SaaS Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to My AI-Powered SaaS Website</h1>
+            <button id="modeToggle">Toggle Dark/Light Mode</button>
+        </header>
+        <section id="animatedStats">
+            <div class="stat">
+                <h2>100+</h2>
+                <p>Clients Served</p>
+            </div>
+            <div class="stat">
+                <h2>300+</h2>
+                <p>Projects Completed</p>
+            </div>
+            <div class="stat">
+                <h2>1000+</h2>
+                <p>Users Registered</p>
+            </div>
+        </section>
+        <section id="blog">
+            <h2>Blog</h2>
+            <div class="blog-post">
+                <h3>New Features Coming Soon!</h3>
+                <p>Stay tuned for updates on our latest features!</p>
+            </div>
+        </section>
+    </div>
+    <script src="particles.js"></script>
+    <script>
+        // Dark/Light mode toggle
+        const toggleButton = document.getElementById('modeToggle');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+
+        // Initialize particle background
+        particlesJS.load('particles-js', 'particles.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
+</body>
+</html>
